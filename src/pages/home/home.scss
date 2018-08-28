@@ -1,0 +1,144 @@
+page-home {
+  ion-content
+  {
+    background: -webkit-radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
+    background: radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
+  }
+  ion-header
+  {
+    ion-buttons
+    {
+      background: #FFF;
+      padding: 0;
+      margin: 0;
+      button.skipLogin
+      {
+        position: relative;
+        right: 10px;
+      }
+    }
+  }
+  div#root
+  {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .auth0-lock.auth0-lock, .auth0-lock.auth0-lock *
+  {
+    margin: auto;
+    box-sizing: initial;
+  }
+  .auth0-lock.auth0-lock.auth0-lock-opened-in-frame
+  {
+    opacity: 1;
+    pointer-events: auto;
+    position: relative;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: auto;
+    display: flex;
+  }
+
+
+  div#root.mobile
+  {
+    .auth0-lock.auth0-lock .auth0-lock-cred-pane {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+    }
+    .auth0-lock.auth0-lock .auth0-lock-widget-container {
+      position: relative;
+      border-radius: 0 !important;
+      height: 100%;
+    }
+    .auth0-lock.auth0-lock.auth0-lock-opened-in-frame {
+      margin: 0 !important;
+      width: 100%;
+    }
+    .auth0-lock.auth0-lock .auth0-lock-submit
+    {
+
+    }
+
+    .auth0-lock.auth0-lock .auth0-lock-center {
+      vertical-align: middle;
+      display: table-cell;
+      margin: 0 !important;
+      width: 100%;
+      height: 100%;
+    }
+    .auth0-lock.auth0-lock .auth0-lock-widget {
+      width: auto;
+      height: 100%;
+    }
+    .auth0-lock-error-msg > span
+    {
+      padding: 0;
+    }
+    .auth0-lock-error-msg {
+      color: #F00;
+      text-align: left;
+      margin: 0;
+      border-radius: 3px;
+      position: relative;
+      left: 0;
+      text-indent: 50px;
+      height: 18px;
+      top: 6px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: block;
+    }
+    .auth0-lock-error-msg:after
+    {
+      display: none;
+    }
+    .auth0-lock-password-strength {
+      position: absolute;
+      background: #1f242e;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+      -webkit-transition: none;
+      transition: none;
+      width: 100%;
+      border-radius: 3px;
+      z-index: 1000;
+    }
+    .auth0-lock-password-strength ul li ul li
+    {
+      color: #FFF;
+    }
+    .auth0-lock-password-strength > ul {
+      padding: 15px;
+      padding-top: 10px;
+    }
+    .auth0-lock-password-strength:after {
+      top: 100%;
+      left: 21px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-top-color: #1f242e;
+      border-width: 9px;
+      margin-left: -9px;
+    }
+  }
+}

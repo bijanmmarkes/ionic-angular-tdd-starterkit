@@ -1,0 +1,41 @@
+{
+  "Lock": {
+    "audience": "https://myApp.auth0.com/userinfo",
+    "container": "root",
+    "configurationBaseUrl": "https://cdn.auth0.com",
+    "socialButtonStyle": "small",
+    "theme": {
+      "logo": "../assets/imgs/official.png",
+      "primaryColor": "#ec0005"
+    },
+    "languageDictionary": {
+      "signUpTerms": "I agree to the <a href='/terms' target='_new'>terms of service</a> and <a href='/privacy' target='_new'>privacy policy</a>.",
+      "title": ""
+    },
+    "mustAcceptTerms": true,
+    "allowShowPassword": true,
+    "autofocus": true,
+    "avatar": true,
+    "rememberLastLogin": true,
+    "clientId": "h4fDS4TTYtQDK3BMoPQLUQ8Z8WgJ5it",
+    "domain": "myApp.auth0.com",
+    "auth": {
+      "redirectUrl": "http://localhost:8100/#/home",
+      "redirect": true,
+      "responseType": "token id_token",
+      "params": {
+        "scope": "profile picture openid email offline"
+      },
+      "assetsUrl": "",
+      "rememberLastLogin": "!prompt",
+      "language": "en",
+      "closable": false,
+      "defaultADUsernameFromEmailPrefix": false
+    },
+    "packageIdentifier": "com.myApp"
+  },
+  "Cordova": {
+    "scope": "openid profile",
+    "audience": "https://myApp.auth0.com/userinfo"
+  }
+}

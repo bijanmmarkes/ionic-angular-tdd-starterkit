@@ -1,0 +1,9 @@
+{
+  "app": "myApp",
+  "version": "0.1",
+  "api": "https://myApp.com",
+  "website": "https://myApp.com/Home",
+  "cdn": "https://cdn.myApp.com",
+  "server": "http://localhost:8081",
+  "Debug": "true"
+}

@@ -1,0 +1,58 @@
+page-tabs
+{
+  div.auth_overlay
+  {
+    position: absolute;
+    z-index: 999;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: -webkit-radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
+    background: radial-gradient(#40404b, #111118) rgba(34,34,40,0.94);
+    div.auth_overlay_inner
+    {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      ion-buttons
+      {
+        width: 60%;
+        margin: auto;
+        div
+        {
+          position: relative;
+          bottom: 20px;
+          color: #F9F9F9;
+        }
+      }
+    }
+  }
+  .notification-button {
+    position: relative;
+    width: 42px;
+    top:1px;
+    right: 15px;
+    overflow: visible !important;
+    ion-icon
+    {
+      font-size: 30px;
+    }
+  }
+  .notification-badge {
+    background-color: #ff3c29;
+    position: absolute;
+    top: -4px;
+    font-size: 15px;
+    right: 0px;
+    padding: 3px 6px 3px 6px;
+  }
+  .signInButton
+  {
+    background-color: #387ef5;
+    color: #FFF;
+    &:hover
+    {
+      color: #FFF !important;
+    }
+  }
+}

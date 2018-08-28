@@ -1,0 +1,44 @@
+settings {
+  ion-nav
+  {
+    button
+    {
+      background: none;
+      color: #FFF;
+    }
+  }
+  ion-content
+  {
+    ion-list-header
+    {
+      height: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+      text-indent: 10px;
+      border-bottom: 0.55px solid #c8c7cc;
+    }
+    ion-item
+    {
+      padding-left: 0 !important;
+      margin: 0;
+      ion-label
+      {
+        text-indent: 10px;
+      }
+    }
+    .accountList
+    {
+      ion-list-header
+      {
+        padding-left: 0 !important;
+        text-indent: 10px;
+      }
+      button
+      {
+        text-indent: 10px;
+        padding-left: 0 !important;
+      }
+    }
+    background: #FFF;
+  }
+}

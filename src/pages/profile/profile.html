@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="main_content" [hidden]="!this.auth.isAuthenticated()">
+    <div class="avatar_con">
+      <ion-avatar *ngIf="this.auth.user" class="profile_avatar">
+        <img src="{{ this.auth.user.picture }}">
+        <!--<fa-icon class="avatar_edit" (click)="presentEditProfileModal()" [icon]="['fas', 'pencil']"></fa-icon>-->
+      </ion-avatar>
+      <div class="main_content_buttons">
+        <!--<fa-icon class="profile_settings" (click)="presentSettingsModal()" [icon]="['fas', 'cog']"></fa-icon>-->
+      </div>
+    </div>
+    <div class="profileInfo">
+      <div><span>0</span><span>Followers</span></div>
+      <div><span>0</span><span>Posts</span></div>
+      <div><span>0</span><span>Following</span></div>
+    </div>
+  </div>
+</ion-content>
+<div class="auth_overlay" [hidden]="this.auth.isAuthenticated()">
+  <div class="auth_overlay_inner">
+    <ion-buttons align-items-center>
+      <div>
+        You must be logged in to view this
+      </div>
+      <button class="signInButton" (click)="this.auth.initLogin()" ion-button end color="default">Sign In</button>
+    </ion-buttons>
+  </div>
+</div>
+
+
+

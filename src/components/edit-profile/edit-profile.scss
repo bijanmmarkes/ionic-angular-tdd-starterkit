@@ -1,0 +1,112 @@
+edit-profile {
+  ion-title
+  {
+    left: 0;
+    top: 0;
+    padding: 0 90px 1px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    pointer-events: none;
+  }
+  .private_header
+  {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-indent: 10px;
+    border-bottom: 0.55px solid #c8c7cc;
+    ion-label
+    {
+      max-width: none;
+    }
+  }
+  ion-list
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  ion-input
+  {
+    flex-basis: 68%;
+    font-size: 14px;
+    margin:0;
+    padding: 0;
+    input
+    {
+      margin: 0 !important;
+    }
+  }
+  ion-item
+  {
+    padding-left: 0 !important;
+    text-indent: 12px;
+    font-size: 14px;
+    border-bottom: 0.55px solid #c8c7cc;
+  }
+  ion-label
+  {
+    width: 115px !important;
+    max-width: 115px;
+    flex-grow: 1;
+    flex-basis: 30%;
+    font-size: 14px;
+  }
+  .item-cover {
+    width: 0;
+    height: 0;
+  }
+  ion-select.genderSelect
+  {
+    flex-basis: 67%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    .select-icon
+    {
+      width: 20px;
+    }
+    .select-text
+    {
+      font-size:14px;
+    }
+  }
+  ion-textarea.bioItem
+  {
+      padding-left: 9px;
+      margin: 0;
+      font-size: 14px;
+      min-height: 26px;
+      textarea
+      {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        justify-content: flex-end;
+        resize: vertical;
+        max-width: 100%;
+        max-height: 220px;
+      }
+  }
+  ion-datetime
+  {
+    font-size: 14px;
+    padding: 0 !important;
+  }
+  .bioCon
+  {
+
+    ion-label
+    {
+      width: 110px;
+    }
+  }
+  ion-item:last-of-type
+  {
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+  }
+}

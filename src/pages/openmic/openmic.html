@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+</ion-content>
+<div class="auth_overlay" [hidden]="this.auth.isAuthenticated()">
+  <div class="auth_overlay_inner">
+    <ion-buttons align-items-center>
+      <div>
+        You must be logged in to view this
+      </div>
+      <button class="signInButton" (click)="this.auth.initLogin()" ion-button end color="default">Sign In</button>
+    </ion-buttons>
+  </div>
+</div>

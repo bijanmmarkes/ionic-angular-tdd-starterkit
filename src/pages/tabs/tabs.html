@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title *ngIf="activeTab">{{ activeTab.tabTitle }}</ion-title>
+    <ion-buttons end>
+      <button class="signInButton" (click)="this.auth.initLogin()" [hidden]="this.auth.isAuthenticated()" ion-button end color="default">Sign In</button>
+      <div [hidden]="!this.auth.isAuthenticated()">
+        <button class="notification-button" ion-button clear>
+          <ion-icon name="notifications">
+            <ion-badge class="notification-badge" color="danger">0</ion-badge>
+          </ion-icon>
+        </button>
+      </div>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-tabs #MainTabs (ionChange)="onTabsChange()">
+  <ion-tab [root]="tab1Root" tabTitle="Watch" tabIcon="ios-play"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Battle" tabIcon="ios-easel"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="OpenMic" tabIcon="ios-headset"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="Profile" tabIcon="ios-contact"></ion-tab>
+</ion-tabs>

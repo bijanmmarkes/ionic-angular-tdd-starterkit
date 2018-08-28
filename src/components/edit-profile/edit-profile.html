@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title> Edit Profile </ion-title>
+    <ion-buttons align-items-start>
+      <button ion-button small (click)="dismiss()">
+        Close
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button small (click)="dismiss()">
+        Done
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item ios>
+      <ion-label color="primary">Name</ion-label>
+      <ion-input [value]="this.auth.user.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Stagename</ion-label>
+      <ion-input placeholder="Reserve a stagename"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Website</ion-label>
+      <ion-input placeholder="Got a website ?"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Birthday</ion-label>
+      <ion-datetime placeholder="Enter your birthday" displayFormat="MMMM DD YYYY" min="1940" max="2020" [(ngModel)]="birthday">
+      </ion-datetime>
+    </ion-item>
+    <ion-item class="bioCon">
+      <ion-label color="primary">Bio</ion-label>
+      <ion-textarea class="bioItem" placeholder="Tell us about yourself"></ion-textarea>
+    </ion-item>
+    <ion-list-header class="private_header">Private Information</ion-list-header>
+    <ion-item>
+      <ion-label color="primary">Email</ion-label>
+      <ion-input placeholder="Enter your email" [disabled]="this.auth.user.email !== null" [value]="this.auth.user.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Phone Number</ion-label>
+      <ion-input placeholder="(408) 123-1234"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Gender</ion-label>
+      <ion-select class="genderSelect">
+        <ion-option> Male </ion-option>
+        <ion-option> Female </ion-option>
+        <ion-option selected> Not Specified </ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Home Town</ion-label>
+      <ion-input placeholder="Where are you from?"></ion-input>
+    </ion-item>
+    <ion-item></ion-item>
+
+
+  </ion-list>
+</ion-content>
